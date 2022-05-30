@@ -104,7 +104,6 @@ window.onload = function() {
     let direccionRegex = /^[A-Za-z0-9\s]+$/g;
     let cantEspacios = direccion.value.split(" ").length - 1
     if (direccion.value.length < 5 || !direccionRegex.test(direccion.value) || cantEspacios > 1) {
-       (cantEspacios)
       direccionError.classList.remove('hiddenError');
     } 
   } 
