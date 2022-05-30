@@ -43,38 +43,31 @@ window.onload = function() {
 
   // Clear error function
   function clearNombreError(e) {
-    console.log('clearNombreError',nombreError)
     nombreError.classList.add('hiddenError');
   }
 
   function clearApellidoError(e) {
-    console.log('clearApellidoError')
     apellidoError.classList.add('hiddenError');
   }
 
   function clearEmailError(e) {
-    console.log('clearEmailError')
     emailError.classList.add('hiddenError');
   }
 
   function clearPasswordError(e) {
-    console.log('clearPasswordError')
     passError.classList.add('hiddenError');
   }
 
   function clearTelefonoError(e) {
-    console.log('clearPasswordError')
     telefonoError.classList.add('hiddenError');
   }
 
   function clearDireccionError(e) {
-    console.log('clearDireccionError')
     direccionError.classList.add('hiddenError');
   }
 
   // Validation function
   function validateNombre(e) {
-    console.log('validateNombre', nombreError)
     if(nombre.value.length < 3) {
         nombreError.classList.remove('hiddenError');
     }
@@ -111,7 +104,7 @@ window.onload = function() {
     let direccionRegex = /^[A-Za-z0-9\s]+$/g;
     let cantEspacios = direccion.value.split(" ").length - 1
     if (direccion.value.length < 5 || !direccionRegex.test(direccion.value) || cantEspacios > 1) {
-      console.log(cantEspacios)
+       (cantEspacios)
       direccionError.classList.remove('hiddenError');
     } 
   } 
